@@ -21,6 +21,6 @@ public class LaunchScreen extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 5*600);
+        }, 5*300);
     }
 }

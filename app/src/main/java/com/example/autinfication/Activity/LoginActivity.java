@@ -68,13 +68,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 if (response.isSuccessful()){
 
-                  String message = "Все ок";
+                  String message = "Вы успешно вошли!";
                     Toast.makeText(LoginActivity.this, message, Toast.LENGTH_LONG).show();
                   Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                   startActivity(intent);
                   finish();
                 }else {
-                    String message = "Что-то пошло не так";
+                    String message = "Что-то пошло не так!";
                     Toast.makeText(LoginActivity.this, response.errorBody().toString(), Toast.LENGTH_LONG).show();
                 }
             }
